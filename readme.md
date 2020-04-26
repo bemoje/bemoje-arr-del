@@ -1,6 +1,6 @@
 # @bemoje/arr-del
 
-Remove an element from an array if present.
+Remove an element in place from an array, if present.
 
 #### Version
 
@@ -40,13 +40,9 @@ import arrDel from '@bemoje/arr-del'
 const arr = ['a', 'b', 'c']
 
 arrDel(arr, 'd')
-
-console.log(arr)
 //=> ['a', 'b', 'c']
 
 arrDel(arr, 'b')
-
-console.log(arr)
 //=> ['a', 'c']
 
 ```
@@ -62,7 +58,7 @@ npm run test
 ## API
 ### arrDel
 
-Remove an element from an array if present.
+Remove an element in place from an array, if present.
 
 ##### Parameters
 
@@ -71,7 +67,7 @@ Remove an element from an array if present.
 -   `element` **any** The element to remove
 
 ##### Returns
-**void** 
+**[Array][3]** The array after removal in space.
 
 [1]: #arrdel
 

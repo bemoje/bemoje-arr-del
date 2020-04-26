@@ -3,9 +3,7 @@ import arrDel from '../src/arr-del'
 describe('arrDel', () => {
 	test('works', () => {
 		const arr = ['a', 'b', 'c']
-		arrDel(arr, 'd')
-		expect(arr).toStrictEqual(['a', 'b', 'c'])
-		arrDel(arr, 'c')
-		expect(arr).toStrictEqual(['a', 'b'])
+		expect(arrDel(arr, 'd')).toStrictEqual(['a', 'b', 'c'])
+		expect(arrDel(arr, 'c')).toStrictEqual(['a', 'b'])
 	})
 })

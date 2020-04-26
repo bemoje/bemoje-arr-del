@@ -2,10 +2,10 @@ import assertArgs from '@bemoje/assert-args';
 import assertType from '@bemoje/assert-type';
 
 /**
- * Remove an element from an array if present.
+ * Remove an element in place from an array, if present.
  * @param {Array} arr - The array
  * @param {*} element - The element to remove
- * @return {void}
+ * @return {Array} The array after removal in space.
  */
 function arrDel(arr, element) {
 	assertArgs(arr, element);
@@ -14,10 +14,12 @@ function arrDel(arr, element) {
 	let i = arr.indexOf(element);
 
 	if (i === -1) {
-		return
+		return arr
 	}
 
 	arr.splice(i, 1);
+
+	return arr
 }
 
 export default arrDel;

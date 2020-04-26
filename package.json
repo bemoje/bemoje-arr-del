@@ -1,7 +1,7 @@
 {
    "name": "@bemoje/arr-del",
-   "version": "1.0.0",
-   "description": "Remove an element from an array if present.",
+   "version": "2.0.0",
+   "description": "Remove an element in place from an array, if present.",
    "main": "dist/arr-del.umd.js",
    "module": "dist/arr-del.esm.js",
    "browser": "dist/arr-del.umd.js",
@@ -68,9 +68,12 @@
    "keywords": [
       "remove",
       "element",
+      "place",
       "array",
       "present",
       "arr",
+      "removal",
+      "space",
       "arrdel"
    ]
 }

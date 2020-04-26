@@ -7,14 +7,14 @@
 
 ## arrDel
 
-Remove an element from an array if present.
+Remove an element in place from an array, if present.
 
 ### Parameters
 
 -   `arr` **[Array][3]** The array
 -   `element` **any** The element to remove
 
-Returns **void** 
+Returns **[Array][3]** The array after removal in space.
 
 [1]: #arrdel
 
